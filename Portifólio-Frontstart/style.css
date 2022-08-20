@@ -1,0 +1,74 @@
+* {
+    /* Os tamanhos passam a ser medidos da borda */
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: #212226;
+}
+
+h1,
+h2,
+p,
+button {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 44px;
+    color: #15CDCB;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+button {
+    background-color: #5280E2;
+    border: 0;
+    border-radius: 16px;
+    padding: 12px 35px;
+    margin-top: 40px;
+}
+
+header{
+    /* background-color: red; */
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    width: 50%;
+    height: fit-content;
+    /* background-color: purple; */
+    padding: 0 100px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    background-color: #212226;
+}
+
+nav img{
+    height: 45px;
+}
+
+nav ul a{
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+section{
+    height: 1500px;
+    background-color: purple;
+}
