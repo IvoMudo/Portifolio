@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --menu-height: 75px;
+}
+
 * {
     /* Os tamanhos passam a ser medidos da borda */
     box-sizing: border-box;
@@ -9,16 +15,20 @@ body {
     background-color: #212226;
 }
 
-h1,
-h2,
-p,
-button {
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
     color: #ffffff;
+    font-weight: 200;
 }
 
 h1 {
     font-size: 44px;
     color: #15CDCB;
+    font-weight: 400;
 }
 
 h2 {
@@ -33,42 +43,63 @@ button {
     margin-top: 40px;
 }
 
-header{
-    /* background-color: red; */
-    height: calc(100vh - 75px);
+header {
+    height: calc(100vh - var(--menu-height));
     display: flex;
     align-items: center;
+
 }
 
-header .container{
+header .container {
     width: 50%;
     height: fit-content;
-    /* background-color: purple; */
     padding: 0 100px;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
-    height: 75px;
+    height: var(--menu-height);
     position: sticky;
     top: 0;
     background-color: #212226;
 }
 
-nav img{
+nav span.logo {
     height: 45px;
+    width: 150px;
+    background-color: #15CDCB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212226;
+    font-weight: 400;
 }
 
-nav ul a{
+nav ul a {
     font-size: 24px;
+    color: #15CDCB;
     text-decoration: none;
     margin: 0 50px;
 }
 
-section{
-    height: 1500px;
-    background-color: purple;
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - var(--menu-height))
+}
+
+section .container {
+    width: 50%;
+    padding: 0 100px;
+    height: fit-content;
+}
+
+section div.img-container{
+    margin: 0 auto;
+    padding: 24px 21px 23px 25px;
+    border: #15CDCB 2px solid;
 }
